@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accueil - Portfolio Lionel PETIOTE</title>
+	<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+	<!-- En-tête et menu -->
+	<header>
+		<h1>Bienvenue sur mon Portfolio</h1>
+		<button id="menuBtn">☰ Menu</button>
+
+		<nav id="navMenu">
+			<a href="Accueil.html">Accueil</a>
+			<a href="apropos.html">À propos</a>
+			<a href="competences.html">Compétences</a>
+			<a href="projets.html">Projets</a>
+			<a href="loisirs.html">Loisirs</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<!-- Contenu principal -->
+	<main>
+		<section>
+			<h2>Bonjour</h2>
+			<p>
+				Je m'appelle Lionel PETIOTE. Ingénieur Agronome, passionné par l’innovation, la technologie et le développement 
+				durable, je me positionne aujourd’hui à la croisée des chemins entre l’agriculture, les données et le numérique. Mon parcours 
+				m’a naturellement conduit à explorer la programmation web, la data science et l’informatique appliquée aux territoires ruraux.
+			</p>
+		</section>
+
+		<section>
+			<h2>Pourquoi ce site ?</h2>
+			<p>
+				Ce site est bien plus qu’un simple devoir de fin de formation : c’est un espace personnel que j’ai conçu pour présenter l’ensemble
+				de mes compétences, mes réalisations techniques, mes expériences en agronomie et en gestion de données, ainsi que mes projets 
+				innovants autour de l’agriculture intelligente, de l’analyse spatiale et du développement local. Il est aussi une invitation à 
+				découvrir ma vision : celle d’un futur où l’expertise agronomique s’allie pleinement aux outils numériques pour mieux répondre aux défis du monde rural.
+			</p>
+		</section>
+
+		<section>
+			<h2>Explorez !</h2>
+			<p>
+				Je vous invite à explorer mon <a href="apropos.html">parcours</a> académique et professionnel, à découvrir mes <a href="competences.html">compétences</a> 
+				en HTML, CSS, JavaScript, Python, analyse de données et SIG, à consulter mes <a href="projets.html">projets</a> concrets, et à faire un petit détour vers 
+				mes <a href="loisirs.html">passions</a>, car elles participent aussi à ce que je suis. Bonne visite, et n'hésitez pas à me <a href="contact.html">contacter</a> !
+			</p>
+		</section>
+	</main>
+
+	<!-- Pied de page -->
+	<footer>
+		<p>
+			<em>Lionel <strong>PETIOTE</strong>   _  D-CLIC </em></br><em>&copy; 2025 Tous droits réservés.</em>
+		</p>
+	</footer>
+
+	<!-- Retour en haut de page -->
+	<button id="topBtn" title="Retour en haut">⬆</button>
+
+	<!-- JavaScript -->
+	<script>
+		// Affichage / masquage du menu
+		document.getElementById("menuBtn").addEventListener("click", function () {
+		  let menu = document.getElementById("navMenu");
+		  if (menu.style.display === "block") {
+			menu.style.display = "none";
+		  } else {
+			menu.style.display = "block";
+		  }
+		});
+
+		// Affichage du bouton retour en haut
+		window.onscroll = function () {
+		  let btn = document.getElementById("topBtn");
+		  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			btn.style.display = "block";
+		  } else {
+			btn.style.display = "none";
+		  }
+		};
+
+		// Scroll en douceur vers le haut
+		document.getElementById("topBtn").addEventListener("click", function () {
+		  window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+	</script>
+</body>
+</html>
