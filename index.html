@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Lionel PETIOTE</title>
+	<link rel="stylesheet" href="Style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+	<!-- Mon menu -->
+	<div id="sideMenu" class="menu">
+		<button class="closeBtn" onclick="fermerMenu()">&times;</button>
+		<button onclick="scrollToSection('hero')">Accueil</button>
+		<button onclick="scrollToSection('about')">À propos</button>
+		<button onclick="scrollToSection('projects')">Projets</button>
+		<button onclick="scrollToSection('skills')">Compétences</button>
+		<button onclick="scrollToSection('contact')">Contact</button>
+	</div>
+
+	<!-- Bouton pour ouvrir le menu -->
+	<button id="menuBtn" onclick="ouvrirMenu()">&#9776;</button>
+
+	<!-- Bouton retour en haut -->
+	<button id="topBtn" title="Retour en haut">⬆</button>
+
+	<!-- Contenu principal -->
+	<main id="mainContent">
+		<section id="hero">
+			<h1>Je suis Lionel PETIOTE, Ingénieur Agronome, Data Scientist, Informaticien & Développeur passionné !</h1>
+			<p>
+				Je me positionne aujourd’hui à la croisée des chemins entre l’agriculture, les données
+				et le numérique. Mon parcours m’a naturellement conduit à explorer la programmation web, 
+				la data science et l’informatique appliquée aux territoires ruraux.Je conçois des projets 
+				numériques utiles, accessibles et durables.
+			</p>
+			<a href="#projects" class="btn">Voir mes projets</a>
+		</section>
+		
+		<section>
+			<section id="about">
+				<div class="about-container">
+					<div class="about-text">
+						<h2>À propos</h2>
+						<p>
+							Ingénieur agronome, passionné par les données, les technologies numériques et l'innovation au service
+							du développement rural. Mon parcours m’a permis d’explorer des domaines aussi variés que la programmation web, 
+							l’analyse de données agricoles, les systèmes d’information géographique (SIG) et la gestion de projets techniques. 
+							Je crois profondément à l’importance de combiner savoir scientifique, outils numériques et sens humain pour proposer 
+							des solutions durables aux défis du monde rural en Haïti et ailleurs.  
+						</p>
+						<p>
+							À travers ce portfolio, je souhaite vous partager mon univers, mes projets et ma vision. C’est également un espace pour 
+							entrer en contact, collaborer ou échanger sur les opportunités où technologie et impact local se rejoignent.
+						</p>
+					</div>
+
+					<img src="C:\Users\cdd\Desktop\D-CLIC_Dev.Web\Projet_Final_PETIOTE\PhotoCV.jpg" alt="Photo Lionel PETIOTE" class="profil-image">
+					<a href="C:\Users\cdd\Desktop\D-CLIC_Dev.Web\Projet_Final_PETIOTE\Curriculum_Vitae_de_Lionel_PETIOTE.pdf" class="btn" target="_blank">Voir mon CV</a>
+				</div>
+			</section>
+		</section>
+
+		<section id="projects">
+			<h2>Mes Projets</h2>
+			<div class="project">
+				<ul>
+				<li>Business Intelligence pour une entreprise d'aviation</li>
+				</ul>
+				<p>Il s'agit d'une analyse de base de données sur les crashs afin de mieux orienter les investissement d'une entreprise fraichement rentrée dans le secteur.</p>
+				<p><em>#Python #Pandas #Matplotlib #PowerBI #MySQL</em></p
+				<a></a>
+				<a href="C:\Users\cdd\Desktop\D-CLIC_Dev.Web\Projet_Final_PETIOTE\Project_Phase1_PETIOTE_Lionel.ipynb" class="btn" target="_blank">Voir</a>
+			</div>
+			
+			<div class="project">
+				<ul>
+				<li>Projet de création de site web multipages</li>
+				</ul>
+				<p>
+					Il s'agit du premier prototype de mon projet final de Développement Web de D-CLIC. Il est multipages et ne prend pas en compte le WireFrame proposé.
+				</p>
+				<p><em>#JavaScript #HTML #CSS</em></p>
+				<a href="C:\Users\cdd\Desktop\D-CLIC_Dev.Web\Projet_Final_PETIOTE\Essaie1\Accueil.html" class="btn">Voir</a>
+			</div>
+		</section>
+
+		<section id="skills">
+			<h2>Mes Compétences</h2>
+			<div class="skills-container">
+				<div class="skills-box">
+					<h3>Soft Skills</h3>
+					<p>Gestion de projet</p>
+					<div class="bar">
+						<div class="progress" style="width: 80%"></div>
+					</div>
+					<p>Résolution de conflit</p>
+					<div class="bar">
+						<div class="progress" style="width: 80%"></div>
+					</div>
+					<p>Sens de responsabilité</p>
+					<div class="bar">
+						<div class="progress" style="width: 100%"></div>
+					</div>
+					<p>Adaptabilité</p>
+					<div class="bar">
+						<div class="progress" style="width: 90%"></div>
+					</div>
+				</div>
+				<div class="skills-box">
+					<h3>Hard Skills</h3>
+					<p>HTML</p>
+					<div class="bar">
+						<div class="progress" style="width: 95%"></div>
+					</div>
+					<p>CSS</p>
+					<div class="bar">
+						<div class="progress" style="width: 85%"></div>
+					</div>
+					<p>JavaScript</p>
+					<div class="bar">
+						<div class="progress" style="width: 75%"></div>
+					</div>
+					<p>Python</p>
+					<div class="bar">
+						<div class="progress" style="width: 90%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<h2>Contact</h2>
+		<section id="contact">
+			<h2>Vous avez un <span class="highlight">projet en tête ?</span><br> N'hésitez pas à me <span class="highlight">contacter</span></h2>
+			<form action="https://formsubmit.co/el/lofixo" method="POST">
+				<div class="form-row">
+					<input type="text" name="Prénom" required placeholder="Votre prénom">
+					<input type="text" name="Nom" required placeholder="Votre nom">
+				</div>
+				<input type="text" name="Sujet" required placeholder="Votre sujet">
+				<textarea name="Message" required placeholder="Écrivez votre message ici..."></textarea>
+				<input type="text" name="_honey" style="display:none">
+				<input type="hidden" name="_next" value="C:\Users\cdd\Desktop\D-CLIC_Dev.Web\Projet_Final_PETIOTE\merci.html">
+				<button type="submit">Envoyer</button>
+			</form>
+			<div class="social-icons">
+				<a href="https://wa.me/50946884611" target="_blank" class="icon whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+				<a href="https://www.linkedin.com/in/lionel-petiote-1552a8359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+		</section>
+		
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Lionel PETIOTE – Tous droits réservés.</p>
+	</footer>
+
+	<!-- JavaScript -->
+	<script>
+		function ouvrirMenu() {
+		  document.getElementById("sideMenu").style.width = "250px";
+		  document.getElementById("mainContent").style.marginLeft = "250px";
+		}
+
+		function fermerMenu() {
+		  document.getElementById("sideMenu").style.width = "0";
+		  document.getElementById("mainContent").style.marginLeft = "0";
+		}
+
+		function scrollToSection(id) {
+		  fermerMenu();
+		  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+		}
+
+		window.onscroll = function () {
+		  let btn = document.getElementById("topBtn");
+		  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			btn.style.display = "block";
+		  } else {
+			btn.style.display = "none";
+		  }
+		};
+
+		document.getElementById("topBtn").addEventListener("click", function () {
+		  window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+	</script>
+</body>
+</html>
