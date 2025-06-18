@@ -7,20 +7,61 @@
   <link rel="stylesheet" href="Styl.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <nav>
-      <button><a href="Accueil.html">Accueil</a></button>
-      <button><a href="apropos.html">À propos</a></button>
-      <button><a href="competences.html">Compétences</a></button>
-      <button><a href="projets.html">Projets</a></button>
-      <button><a href="loisirs.html">Loisirs</a></button>
-      <button><a href="contact.html">Contact</a></button>
-    </nav>
-  </header>
+	<!-- En-tête et menu -->
+	<header>
+		<h1>Bienvenue sur mon Portfolio</h1>
+		<button id="menuBtn">☰ Menu</button>
+
+		<nav id="navMenu">
+			<a href="Accueil.html">Accueil</a>
+			<a href="apropos.html">À propos</a>
+			<a href="competences.html">Compétences</a>
+			<a href="projets.html">Projets</a>
+			<a href="loisirs.html">Loisirs</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+	
   <main>
-    <!-- Contenu spécifique à chaque page -->
+    
   </main>
-  <footer>&copy; 2025 - PETIOTE Lionel</footer>
+  
+  <!-- Pied de page -->
+	<footer>
+		<p>
+			<em>Lionel <strong>PETIOTE</strong>   _  D-CLIC </em></br><em>&copy; 2025 Tous droits réservés.</em>
+		</p>
+	</footer>
+
+	<!-- Retour en haut de page -->
+	<button id="topBtn" title="Retour en haut">⬆</button>
+
+	<!-- JavaScript -->
+	<script>
+		// Affichage / masquage du menu
+		document.getElementById("menuBtn").addEventListener("click", function () {
+		  let menu = document.getElementById("navMenu");
+		  if (menu.style.display === "block") {
+			menu.style.display = "none";
+		  } else {
+			menu.style.display = "block";
+		  }
+		});
+
+		// Affichage du bouton retour en haut
+		window.onscroll = function () {
+		  let btn = document.getElementById("topBtn");
+		  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			btn.style.display = "block";
+		  } else {
+			btn.style.display = "none";
+		  }
+		};
+
+		// Scroll en douceur vers le haut
+		document.getElementById("topBtn").addEventListener("click", function () {
+		  window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+	</script>
 </body>
 </html>
